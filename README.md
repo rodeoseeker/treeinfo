@@ -4,8 +4,10 @@ This repository can be used to fetch images from Google using Google Custom Sear
 
 Usage:
 1. Edit google_image_search.py to replace with your Google Custom Search API Key and Cx. Ask Chat-GPT on how to obtain these, if you don't know how.
-2. You may edit the tree_info.html to udpate the tree list.
-2. Run ./tree_info.py in a crontab once a day, until all tree data is updated.
-3. run ./genhtml.py to generate an html page like https://rodeoseeker.github.io/tree_info.html
+2. You may edit the tree_info.html to udpate the tree list. You can not remove a tree from the list; only replace a tree with another tree.
+   The pre-constructed ./tree_data will get messed up if you remove a tree without replacing it with another. The place of the trees that are not impacted in the list must not change.
+   Note: To refresh a tree-data just remove the subdir under tree_data that matches the name in the namekey.txt. 
+4. Run ./tree_info.py in a crontab once a day, until all tree data is updated.
+5. run ./genhtml.py to generate an html page like https://rodeoseeker.github.io/tree_info.html
 
 
