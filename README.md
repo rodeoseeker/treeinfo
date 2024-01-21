@@ -7,7 +7,7 @@ Usage:
    Look for ...
       api_key = "<REPLACE WITH YOUR API-KEY>"
       cx = "<REPLACE WITH YOUR CX>"
-2. You may edit the tree_info.html to udpate the tree list. You can not remove a tree from the list; only replace a tree with another tree.
+2. You may edit the tree_info.py to udpate the tree list. You can not remove a tree from the list; only replace a tree with another tree.
    The pre-constructed ./tree_data will get messed up if you remove a tree without replacing it with another. The place of the trees that are not impacted in the list must not change.
    Note: To refresh a tree-data just remove the subdir under tree_data that matches the name in the namekey.txt. 
 3. Run ./tree_info.py in a crontab once a day, until all tree data is updated.
